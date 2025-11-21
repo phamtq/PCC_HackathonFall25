@@ -1,11 +1,9 @@
-#this will be the program to move the arm from its starting position to 
-#position A
-def arm_clamp(enable):
-    if enable == 0:
-        Arm.Arm_serial_servo_write(6, 0, 1000)
-    else:
-        Arm.Arm_serial_servo_write(6, 143, 1000)
-        time.sleep(.5)
+#this will be the program to move the arm from various locations
+import time
+from Arm_Lib import Arm_Device
+
+Arm = Arm_Device()
+time.sleep(.1)
 
 def arm_move(p, s_time = 500):
     for i in range(5):
@@ -20,6 +18,4 @@ def arm_move(p, s_time = 500):
         time.sleep(.01)
     time.sleep(s_time/1000)
 
-p_mould = [90, 130, 0, 0, 90]
-p_top = [90, 80, 50, 50, 270]
 

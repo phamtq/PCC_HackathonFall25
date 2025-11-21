@@ -1,7 +1,7 @@
 # PCC Fall 2025 Hackathon Project
 # Date: November 21, 2025
 #
-# Group members: Kieran, 
+# Group members: Kieran, Tim, Conner
 #
 # Description: This project uses the DOFBOT-Pi to stack colored blocks in a
 # particular order using computer vision.
