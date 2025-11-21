@@ -16,4 +16,13 @@ from Arm_Lib import Arm_Device
 Arm = Arm_Device()
 time.sleep(.1)
 
+# Define constants
+SERVO1 = 1
+SERVO2 = 2
+SERVO3 = 3
+SERVO4 = 4
+SERVO5 = 5
+SERVO6 = 6
 
+# Initilize servos 1 - 6
+Arm_serial_servo_write()
