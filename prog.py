@@ -24,5 +24,16 @@ SERVO4 = 4
 SERVO5 = 5
 SERVO6 = 6
 
-# Initilize servos 1 - 6
-Arm_serial_servo_write()
+MAX_GRIP = 143
+RESET_GRIP_POS = 0
+RESET_SERVO_POS = 90
+
+# Function definitions
+def reset_all():
+    Arm.Arm_serial_servo_write6(90, 90, 90, 90, 90, 90, 500)
+    time.sleep(1)
+    Arm.Arm_serial_servo_write(6, 0, 100)
+    time.sleep(1)
+
+# Initialize/reset servos to upright position
+reset_all()
