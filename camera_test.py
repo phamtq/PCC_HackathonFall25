@@ -1,9 +1,11 @@
 import time
 import cv2
+import os
+os.environ["QT_QPA_PLATFORM"] = "xcb"
 
 def camOn():
     # Open the default camera (camera 0)
-    cam = cv2.VideoCapture(0)
+    cam = cv2.VideoCapture(1)
 
     # Get the default frame width and height
     frame_width = int(cam.get(cv2.CAP_PROP_FRAME_WIDTH))

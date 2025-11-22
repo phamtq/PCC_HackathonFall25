@@ -40,7 +40,7 @@ def camOn():
 
         for pic, contour in enumerate(contours): 
             area = cv2.contourArea(contour) 
-            if(area > 20): 
+            if(area > 1000): 
                 x, y, w, h = cv2.boundingRect(contour) 
                 imageFrame = cv2.rectangle(imageFrame, (x, y), (x + w, y + h), (0, 0, 255), 2) 
                 
